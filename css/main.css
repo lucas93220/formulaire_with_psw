@@ -1,0 +1,82 @@
+/* theme css main */
+
+header > h1, footer p{
+    text-align: center;
+    line-height: 6.5rem;
+    color: #222;
+}
+main{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+:root{
+    --colors-primary: #2b2a33;
+    --colors-secondary: #42414d;
+    --colors-text-primary: #fff;
+    --color-text-title: #2980b9;
+}
+body{
+    background-color: var(--colors-secondary);
+    color: var(--colors-text-primary);
+}
+header h1, footer p{
+    color: var(--colors-text-primary);
+}
+section h2, 
+:is(p){
+    color: var(--colors-text-primary);
+    
+}
+section h2{
+    background-color: var(--colors-primary);
+    padding: 1rem;
+    border-radius: .8rem;
+    color: var(--color-text-title);
+}
+section{
+    background: var(--colors-secondary);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: .8rem;
+}
+
+section ul{
+    color: #fff;
+    list-style: none;
+}
+
+section img{
+    display: inline-block;
+    vertical-align: middle;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+section li:last-child{
+    width: 10.0rem;
+}
+
+.primary-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+footer p{
+    color: var(--color-text-title);
+}
+
+.list-persona{
+    position: relative;
+    max-width: 80rem;
+    margin: 5rem auto 0;
+    z-index: 2;
+}
+
+.list-persona li{
+    padding: 1rem;
+    margin-bottom: .1rem;
+    background-color: #FFF;
+
+}
